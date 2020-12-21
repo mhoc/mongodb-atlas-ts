@@ -331,13 +331,13 @@
         "signature": "7b35ef96147be4e360d359d235170b1b7858a21f8f58cbbdf161d2d0bbda8549",
         "affectsGlobalScope": false
       },
-      "../node_modules/io-ts/lib/pathreporter.d.ts": {
-        "version": "82f2cb31564c7d0e3611fb69f28e9bdae72ead1472d6ed913880e650844512e1",
-        "signature": "82f2cb31564c7d0e3611fb69f28e9bdae72ead1472d6ed913880e650844512e1",
+      "../node_modules/io-ts-reporters/target/src/index.d.ts": {
+        "version": "79ca3bfd0bf39493ed3091de89d477baee9e79e4616260c05fcdae94330f8a76",
+        "signature": "79ca3bfd0bf39493ed3091de89d477baee9e79e4616260c05fcdae94330f8a76",
         "affectsGlobalScope": false
       },
       "../src/util/validate.ts": {
-        "version": "68982efb3b8c8a477deabf208ea418ac8acbc165bcf8d6c8d5214b700b5d7495",
+        "version": "596ee75325d7c621fac158d76c54cb1584af5c0f2b2d45c77066cd8d12c4d709",
         "signature": "374f646fcf88d83cda70976e50136a00acca8f52574dd1fe3a2ed62fd3a79da7",
         "affectsGlobalScope": false
       },
@@ -1074,13 +1074,15 @@
         "../node_modules/fp-ts/lib/option.d.ts",
         "../node_modules/fp-ts/lib/traversable.d.ts"
       ],
+      "../node_modules/io-ts-reporters/target/src/index.d.ts": [
+        "../node_modules/fp-ts/lib/either.d.ts",
+        "../node_modules/fp-ts/lib/option.d.ts",
+        "../node_modules/io-ts/lib/index.d.ts",
+        "../node_modules/io-ts/lib/reporter.d.ts"
+      ],
       "../node_modules/io-ts/lib/index.d.ts": [
         "../node_modules/fp-ts/lib/either.d.ts",
         "../node_modules/fp-ts/lib/function.d.ts"
-      ],
-      "../node_modules/io-ts/lib/pathreporter.d.ts": [
-        "../node_modules/io-ts/lib/index.d.ts",
-        "../node_modules/io-ts/lib/reporter.d.ts"
       ],
       "../node_modules/io-ts/lib/reporter.d.ts": [
         "../node_modules/io-ts/lib/index.d.ts"
@@ -1155,8 +1157,8 @@
       ],
       "../src/util/validate.ts": [
         "../node_modules/fp-ts/lib/either.d.ts",
-        "../node_modules/io-ts/lib/index.d.ts",
-        "../node_modules/io-ts/lib/pathreporter.d.ts"
+        "../node_modules/io-ts-reporters/target/src/index.d.ts",
+        "../node_modules/io-ts/lib/index.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1555,13 +1557,15 @@
         "../node_modules/fp-ts/lib/option.d.ts",
         "../node_modules/fp-ts/lib/traversable.d.ts"
       ],
+      "../node_modules/io-ts-reporters/target/src/index.d.ts": [
+        "../node_modules/fp-ts/lib/either.d.ts",
+        "../node_modules/fp-ts/lib/option.d.ts",
+        "../node_modules/io-ts/lib/index.d.ts",
+        "../node_modules/io-ts/lib/reporter.d.ts"
+      ],
       "../node_modules/io-ts/lib/index.d.ts": [
         "../node_modules/fp-ts/lib/either.d.ts",
         "../node_modules/fp-ts/lib/function.d.ts"
-      ],
-      "../node_modules/io-ts/lib/pathreporter.d.ts": [
-        "../node_modules/io-ts/lib/index.d.ts",
-        "../node_modules/io-ts/lib/reporter.d.ts"
       ],
       "../node_modules/io-ts/lib/reporter.d.ts": [
         "../node_modules/io-ts/lib/index.d.ts"
@@ -1709,8 +1713,8 @@
       "../node_modules/fp-ts/lib/traversablewithindex.d.ts",
       "../node_modules/fp-ts/lib/unfoldable.d.ts",
       "../node_modules/fp-ts/lib/witherable.d.ts",
+      "../node_modules/io-ts-reporters/target/src/index.d.ts",
       "../node_modules/io-ts/lib/index.d.ts",
-      "../node_modules/io-ts/lib/pathreporter.d.ts",
       "../node_modules/io-ts/lib/reporter.d.ts",
       "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "../node_modules/typescript/lib/lib.es2015.core.d.ts",
