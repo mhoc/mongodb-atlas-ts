@@ -29,5 +29,12 @@ const projects = await atlasClient.projects.list();
 
 ## Supported APIs
 
+- `.cloudBackups.list({ clusterName, projectId })`: list cloud backups for a cluster.
 - `.clusters.list({ projectId })`: list clusters in a project.
 - `.projects.list()`: list projects the api key has access to.
+
+## Testing
+
+You must provide `ATLAS_PUBLIC_KEY` and `ATLAS_PRIVATE_KEY` environment variables for testing to
+function properly. Only non-mutable query operations are ever tested, and even those may not
+run properly given everyone would have their Atlas environemnt configured differently.

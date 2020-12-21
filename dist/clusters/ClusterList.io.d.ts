@@ -63,7 +63,7 @@ export declare const ClusterList: io.TypeC<{
             priority: io.NumberC;
             readOnlyNodes: io.NumberC;
         }>>;
-        replicationSpecs: io.TypeC<{
+        replicationSpecs: io.ArrayC<io.TypeC<{
             id: io.StringC;
             numShards: io.NumberC;
             regionsConfig: io.RecordC<io.StringC, io.TypeC<{
@@ -72,7 +72,8 @@ export declare const ClusterList: io.TypeC<{
                 priority: io.NumberC;
                 readOnlyNodes: io.NumberC;
             }>>;
-        }>;
+            zoneName: io.StringC;
+        }>>;
         srvAddress: io.StringC;
         stateName: io.StringC;
     }>>;

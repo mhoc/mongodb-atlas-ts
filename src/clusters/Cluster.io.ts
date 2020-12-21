@@ -58,7 +58,7 @@ export const Cluster = io.type({
     priority: io.number,
     readOnlyNodes: io.number,
   })),
-  replicationSpecs: io.type({
+  replicationSpecs: io.array(io.type({
     id: io.string,
     numShards: io.number,
     regionsConfig: io.record(io.string, io.type({
@@ -67,7 +67,8 @@ export const Cluster = io.type({
       priority: io.number,
       readOnlyNodes: io.number,
     })),
-  }),
+    zoneName: io.string,
+  })),
   srvAddress: io.string,
   stateName: io.string,
 });
