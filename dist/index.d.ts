@@ -1,4 +1,5 @@
 import AxiosDigestAuth from "@mhoc/axios-digest-auth";
+import { CloudBackupsClient } from "./cloudbackups/CloudBackupsClient";
 import { ClustersClient } from "./clusters/ClustersClient";
 import { ProjectsClient } from "./projects/ProjectsClient";
 export interface AtlasClientOpts {
@@ -12,6 +13,7 @@ export declare class AtlasClient {
      * for information on how to use it.
      */
     readonly axiosDigestAuth: AxiosDigestAuth;
+    readonly cloudBackups: CloudBackupsClient;
     readonly clusters: ClustersClient;
     readonly projects: ProjectsClient;
     constructor({ privateKey, publicKey }: AtlasClientOpts);

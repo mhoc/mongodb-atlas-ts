@@ -341,9 +341,29 @@
         "signature": "374f646fcf88d83cda70976e50136a00acca8f52574dd1fe3a2ed62fd3a79da7",
         "affectsGlobalScope": false
       },
+      "../src/cloudbackups/listcloudbackups.dto.ts": {
+        "version": "73181b4422a4e34f1813e7271dbac5f2366de99a83dd78a8abded39ba6cf0d9c",
+        "signature": "12490d7fe0200bf780eaa92f79b974e66aa2584e8d161953fded3f15b3327f2e",
+        "affectsGlobalScope": false
+      },
       "../src/util/link.io.ts": {
         "version": "f7a7f212da0b5bae1d19b17e2154e7513fd7181f7d4fb57699935b35e1f8b9e1",
         "signature": "deb6ea454ece496635439cd668e796268dc6031333fe427f4deb5422276d2127",
+        "affectsGlobalScope": false
+      },
+      "../src/cloudbackups/cloudbackup.io.ts": {
+        "version": "5a23c51e8aa2bcfd60d144531b448b7b04020fcfe57decf604954d4360157a17",
+        "signature": "16a2c6dae6865e10c87770e4a2e7ffea1d195027dd3cf4f2c532ccb442c4125d",
+        "affectsGlobalScope": false
+      },
+      "../src/cloudbackups/cloudbackupslist.io.ts": {
+        "version": "4140aeddfecb1b29bece8f22aa205e075ac353d50309dbef78b2c45d6a42901f",
+        "signature": "3a84c0f4bee1989c35922e38895c32c9b07019702800f5d2ed3c2c393369bfd2",
+        "affectsGlobalScope": false
+      },
+      "../src/cloudbackups/cloudbackupsclient.ts": {
+        "version": "8832ead28eccf39bdb61ffd5ca6c8c23b94fb0f7f23855dbe9b553fa96363a7c",
+        "signature": "66aa691f5ad148ee16a4074acedb2fe8afb5f5f4f7bce59b181df37ec0bd9113",
         "affectsGlobalScope": false
       },
       "../src/clusters/cluster.io.ts": {
@@ -382,8 +402,8 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "3db4184d987c5370be011431fa65666ebc47ec6f4b70b9a66503f456ba70b562",
-        "signature": "c2be7d16454763207f966a6f17b487fdcce55f581ff3abc26b09e02c3135d24e",
+        "version": "655bdf59837e47d318747b4ee56ca66a8eff92c7954e39a2cd1ed49cd447d9da",
+        "signature": "dbc69262259a9a068b8df1d7f094958878b68ae411e4c6ed4bf8b1295407a7d1",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/globals.d.ts": {
@@ -1050,6 +1070,22 @@
       "../node_modules/io-ts/lib/reporter.d.ts": [
         "../node_modules/io-ts/lib/index.d.ts"
       ],
+      "../src/cloudbackups/cloudbackup.io.ts": [
+        "../node_modules/io-ts/lib/index.d.ts",
+        "../src/util/link.io.ts"
+      ],
+      "../src/cloudbackups/cloudbackupsclient.ts": [
+        "../node_modules/@mhoc/axios-digest-auth/dist/index.d.ts",
+        "../node_modules/io-ts/lib/index.d.ts",
+        "../src/cloudbackups/cloudbackupslist.io.ts",
+        "../src/cloudbackups/listcloudbackups.dto.ts",
+        "../src/util/validate.ts"
+      ],
+      "../src/cloudbackups/cloudbackupslist.io.ts": [
+        "../node_modules/io-ts/lib/index.d.ts",
+        "../src/cloudbackups/cloudbackup.io.ts",
+        "../src/util/link.io.ts"
+      ],
       "../src/clusters/cluster.io.ts": [
         "../node_modules/io-ts/lib/index.d.ts",
         "../src/util/link.io.ts"
@@ -1068,6 +1104,7 @@
       ],
       "../src/index.ts": [
         "../node_modules/@mhoc/axios-digest-auth/dist/index.d.ts",
+        "../src/cloudbackups/cloudbackupsclient.ts",
         "../src/clusters/clustersclient.ts",
         "../src/projects/projectsclient.ts"
       ],
@@ -1502,6 +1539,18 @@
       "../node_modules/io-ts/lib/reporter.d.ts": [
         "../node_modules/io-ts/lib/index.d.ts"
       ],
+      "../src/cloudbackups/cloudbackup.io.ts": [
+        "../node_modules/io-ts/lib/index.d.ts"
+      ],
+      "../src/cloudbackups/cloudbackupsclient.ts": [
+        "../node_modules/@mhoc/axios-digest-auth/dist/index.d.ts",
+        "../node_modules/io-ts/lib/index.d.ts",
+        "../src/cloudbackups/cloudbackupslist.io.ts",
+        "../src/cloudbackups/listcloudbackups.dto.ts"
+      ],
+      "../src/cloudbackups/cloudbackupslist.io.ts": [
+        "../node_modules/io-ts/lib/index.d.ts"
+      ],
       "../src/clusters/cluster.io.ts": [
         "../node_modules/io-ts/lib/index.d.ts"
       ],
@@ -1516,6 +1565,7 @@
       ],
       "../src/index.ts": [
         "../node_modules/@mhoc/axios-digest-auth/dist/index.d.ts",
+        "../src/cloudbackups/cloudbackupsclient.ts",
         "../src/clusters/clustersclient.ts",
         "../src/projects/projectsclient.ts"
       ],
@@ -1652,6 +1702,10 @@
       "../node_modules/typescript/lib/lib.es2020.bigint.d.ts",
       "../node_modules/typescript/lib/lib.es5.d.ts",
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "../src/cloudbackups/cloudbackup.io.ts",
+      "../src/cloudbackups/cloudbackupsclient.ts",
+      "../src/cloudbackups/cloudbackupslist.io.ts",
+      "../src/cloudbackups/listcloudbackups.dto.ts",
       "../src/clusters/cluster.io.ts",
       "../src/clusters/clusterlist.io.ts",
       "../src/clusters/clustersclient.ts",
