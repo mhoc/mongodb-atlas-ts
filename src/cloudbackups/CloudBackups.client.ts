@@ -3,8 +3,8 @@ import * as io from "io-ts";
 
 import { validate } from "../util/validate";
 
-import { ListCloudBackupsInput } from "./ListCloudBackups.dto";
-import { CloudBackupsList } from "./CloudBackupsList.io";
+import { CloudBackupsList } from "./CloudBackupList.io";
+import { ListCloudBackupsInput } from "./CloudBackups.list.dto";
 
 export class CloudBackupsClient {
 

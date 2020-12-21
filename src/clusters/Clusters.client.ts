@@ -2,8 +2,9 @@ import AxiosDigestAuth from "@mhoc/axios-digest-auth";
 import * as io from "io-ts";
 
 import { validate } from "../util/validate";
+
 import { ClusterList } from "./ClusterList.io";
-import { ListClustersInput } from "./ListClusters.dto";
+import { ListClustersInput } from "./Clusters.list.dto";
 
 export class ClustersClient {
 

@@ -1,8 +1,9 @@
 import AxiosDigestAuth from "@mhoc/axios-digest-auth";
 
-import { CloudBackupsClient } from "./cloudbackups/CloudBackupsClient";
-import { ClustersClient } from "./clusters/ClustersClient";
-import { ProjectsClient } from "./projects/ProjectsClient";
+import { CloudBackupRestoreJobsClient } from "./cloudBackupRestoreJobs/CloudBackupRestoreJobs.client";
+import { CloudBackupsClient } from "./cloudBackups/CloudBackups.client";
+import { ClustersClient } from "./clusters/Clusters.client";
+import { ProjectsClient } from "./projects/Projects.client";
 
 export interface AtlasClientOpts {
   privateKey: string;
@@ -17,6 +18,7 @@ export class AtlasClient {
    */
   public readonly axiosDigestAuth: AxiosDigestAuth;
 
+  public readonly cloudBackupRestoreJobs: CloudBackupRestoreJobsClient;
   public readonly cloudBackups: CloudBackupsClient;
   public readonly clusters: ClustersClient;
   public readonly projects: ProjectsClient;
@@ -26,6 +28,7 @@ export class AtlasClient {
       password: privateKey,
       username: publicKey,
     });
+    this.cloudBackupRestoreJobs = new CloudBackupRestoreJobsClient(this.axiosDigestAuth);
     this.cloudBackups = new CloudBackupsClient(this.axiosDigestAuth);
     this.clusters = new ClustersClient(this.axiosDigestAuth);
     this.projects = new ProjectsClient(this.axiosDigestAuth);

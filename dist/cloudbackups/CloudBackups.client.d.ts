@@ -1,7 +1,7 @@
 import AxiosDigestAuth from "@mhoc/axios-digest-auth";
 import * as io from "io-ts";
-import { ListCloudBackupsInput } from "./ListCloudBackups.dto";
-import { CloudBackupsList } from "./CloudBackupsList.io";
+import { CloudBackupsList } from "./CloudBackupList.io";
+import { ListCloudBackupsInput } from "./CloudBackups.list.dto";
 export declare class CloudBackupsClient {
     private digestAuth;
     constructor(digestAuth: AxiosDigestAuth);
