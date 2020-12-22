@@ -5,7 +5,7 @@ export declare const CloudBackupRestoreJobList: io.TypeC<{
         rel: io.StringC;
     }>>;
     results: io.ArrayC<io.TypeC<{
-        cancelled: io.BooleanC;
+        cancelled: io.UnionC<[io.NullC, io.UndefinedC, io.BooleanC]>;
         deliveryType: io.StringC;
         deliveryUrl: io.UnionC<[io.NullC, io.UndefinedC, io.ArrayC<io.StringC>]>;
         expired: io.BooleanC;

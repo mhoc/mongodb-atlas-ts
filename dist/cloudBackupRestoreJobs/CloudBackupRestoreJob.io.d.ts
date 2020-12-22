@@ -1,6 +1,6 @@
 import * as io from "io-ts";
 export declare const CloudBackupRestoreJob: io.TypeC<{
-    cancelled: io.BooleanC;
+    cancelled: io.UnionC<[io.NullC, io.UndefinedC, io.BooleanC]>;
     deliveryType: io.StringC;
     deliveryUrl: io.UnionC<[io.NullC, io.UndefinedC, io.ArrayC<io.StringC>]>;
     expired: io.BooleanC;

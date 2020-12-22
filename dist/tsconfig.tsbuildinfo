@@ -357,8 +357,8 @@
         "affectsGlobalScope": false
       },
       "../src/cloudbackuprestorejobs/cloudbackuprestorejob.io.ts": {
-        "version": "60829c110240040bbbdd22fca10787aef653054ef6dc7eb7f49de70f8d1c0243",
-        "signature": "cebd62a5fd1b6f7709b2eb9314469b35a70150436802b71599a16a49c11cedb5",
+        "version": "c71fcc35fe96d0136ff476326246158f1e54631cbd9cf731ab46b59220de4692",
+        "signature": "560b2aee300ce87ca5588a4a5119fe6bd795d1cd20dd944423937f624071bdce",
         "affectsGlobalScope": false
       },
       "../src/cloudbackuprestorejobs/cloudbackuprestorejob.list.dto.ts": {
@@ -368,7 +368,7 @@
       },
       "../src/cloudbackuprestorejobs/cloudbackuprestorejoblist.io.ts": {
         "version": "ba183fb0735afb5028aba09068a6b8f46bd83cfa07ee78d6dc52a6350710a5b6",
-        "signature": "9476b76461b8220789f1064b358ce960f043faf4ed670815327b108c69113cee",
+        "signature": "176a2ab8c2e4db63b920451a4b96fdc3247598228e7303de05a291b99ebf4981",
         "affectsGlobalScope": false
       },
       "../src/cloudbackuprestorejobs/cloudbackuprestorejobs.client.ts": {
