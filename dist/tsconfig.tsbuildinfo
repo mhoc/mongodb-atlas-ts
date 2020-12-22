@@ -346,6 +346,11 @@
         "signature": "3c62eac25bb7ef436cc93f8b54b42ff82072303f31e0e91f08a1b87a6c1f60df",
         "affectsGlobalScope": false
       },
+      "../src/cloudbackuprestorejobs/cloudbackuprestorejob.get.dto.ts": {
+        "version": "c3cee6315a7f62cf4c33153e3f92b2f227da41e311bc236ace5dd54478c2c681",
+        "signature": "3c9bb26aa2f3edff9a28fa665b9f58a1550bff652aa60ce42facacd5e1f0b862",
+        "affectsGlobalScope": false
+      },
       "../src/util/link.io.ts": {
         "version": "f7a7f212da0b5bae1d19b17e2154e7513fd7181f7d4fb57699935b35e1f8b9e1",
         "signature": "deb6ea454ece496635439cd668e796268dc6031333fe427f4deb5422276d2127",
@@ -356,9 +361,19 @@
         "signature": "cebd62a5fd1b6f7709b2eb9314469b35a70150436802b71599a16a49c11cedb5",
         "affectsGlobalScope": false
       },
+      "../src/cloudbackuprestorejobs/cloudbackuprestorejob.list.dto.ts": {
+        "version": "6267cffea2f7afee6efd891e2eeffd84ac198ff90b0a47d60d3fc69d9c32cf9d",
+        "signature": "c203ee067cf132bd6706f0eee499a94462d65d42a98eb1936ec2bd24e0d31485",
+        "affectsGlobalScope": false
+      },
+      "../src/cloudbackuprestorejobs/cloudbackuprestorejoblist.io.ts": {
+        "version": "ba183fb0735afb5028aba09068a6b8f46bd83cfa07ee78d6dc52a6350710a5b6",
+        "signature": "9476b76461b8220789f1064b358ce960f043faf4ed670815327b108c69113cee",
+        "affectsGlobalScope": false
+      },
       "../src/cloudbackuprestorejobs/cloudbackuprestorejobs.client.ts": {
-        "version": "1722332e61639f042f9b644abc56728dcf99d28907bd37971dbfee2e4af38f44",
-        "signature": "6295466d1bddb96b26b4f249d7217579128098c5ee5efbd379a8a7ae2fb378af",
+        "version": "201cd6b0b8cec93df2182498fee8d67bd1e038ad122dad39dbdc1591b85f5029",
+        "signature": "f97e4d9c4fd3f3d9aa47a807ce580e7b3b590278de6dd1d7b258c09e9b6658eb",
         "affectsGlobalScope": false
       },
       "../src/cloudbackups/cloudbackup.io.ts": {
@@ -1091,11 +1106,19 @@
         "../node_modules/io-ts/lib/index.d.ts",
         "../src/util/link.io.ts"
       ],
+      "../src/cloudbackuprestorejobs/cloudbackuprestorejoblist.io.ts": [
+        "../node_modules/io-ts/lib/index.d.ts",
+        "../src/cloudbackuprestorejobs/cloudbackuprestorejob.io.ts",
+        "../src/util/link.io.ts"
+      ],
       "../src/cloudbackuprestorejobs/cloudbackuprestorejobs.client.ts": [
         "../node_modules/@mhoc/axios-digest-auth/dist/index.d.ts",
         "../node_modules/io-ts/lib/index.d.ts",
         "../src/cloudbackuprestorejobs/cloudbackuprestorejob.createdownload.dto.ts",
+        "../src/cloudbackuprestorejobs/cloudbackuprestorejob.get.dto.ts",
         "../src/cloudbackuprestorejobs/cloudbackuprestorejob.io.ts",
+        "../src/cloudbackuprestorejobs/cloudbackuprestorejob.list.dto.ts",
+        "../src/cloudbackuprestorejobs/cloudbackuprestorejoblist.io.ts",
         "../src/util/validate.ts"
       ],
       "../src/cloudbackups/cloudbackup.io.ts": [
@@ -1573,11 +1596,17 @@
       "../src/cloudbackuprestorejobs/cloudbackuprestorejob.io.ts": [
         "../node_modules/io-ts/lib/index.d.ts"
       ],
+      "../src/cloudbackuprestorejobs/cloudbackuprestorejoblist.io.ts": [
+        "../node_modules/io-ts/lib/index.d.ts"
+      ],
       "../src/cloudbackuprestorejobs/cloudbackuprestorejobs.client.ts": [
         "../node_modules/@mhoc/axios-digest-auth/dist/index.d.ts",
         "../node_modules/io-ts/lib/index.d.ts",
         "../src/cloudbackuprestorejobs/cloudbackuprestorejob.createdownload.dto.ts",
-        "../src/cloudbackuprestorejobs/cloudbackuprestorejob.io.ts"
+        "../src/cloudbackuprestorejobs/cloudbackuprestorejob.get.dto.ts",
+        "../src/cloudbackuprestorejobs/cloudbackuprestorejob.io.ts",
+        "../src/cloudbackuprestorejobs/cloudbackuprestorejob.list.dto.ts",
+        "../src/cloudbackuprestorejobs/cloudbackuprestorejoblist.io.ts"
       ],
       "../src/cloudbackups/cloudbackup.io.ts": [
         "../node_modules/io-ts/lib/index.d.ts"
@@ -1744,7 +1773,10 @@
       "../node_modules/typescript/lib/lib.es5.d.ts",
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../src/cloudbackuprestorejobs/cloudbackuprestorejob.createdownload.dto.ts",
+      "../src/cloudbackuprestorejobs/cloudbackuprestorejob.get.dto.ts",
       "../src/cloudbackuprestorejobs/cloudbackuprestorejob.io.ts",
+      "../src/cloudbackuprestorejobs/cloudbackuprestorejob.list.dto.ts",
+      "../src/cloudbackuprestorejobs/cloudbackuprestorejoblist.io.ts",
       "../src/cloudbackuprestorejobs/cloudbackuprestorejobs.client.ts",
       "../src/cloudbackups/cloudbackup.io.ts",
       "../src/cloudbackups/cloudbackuplist.io.ts",
