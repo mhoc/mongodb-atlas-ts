@@ -1,6 +1,6 @@
 {
   "name": "@mhoc/mongodb-atlas",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "a very basic and incomplete wrapper around the mongodb atlas api",
   "main": "dist",
   "scripts": {
