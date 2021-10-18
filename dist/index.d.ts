@@ -2,6 +2,7 @@ import AxiosDigestAuth from "@mhoc/axios-digest-auth";
 import { CloudBackupRestoreJobsClient } from "./cloudBackupRestoreJobs/CloudBackupRestoreJobs.client";
 import { CloudBackupsClient } from "./cloudBackups/CloudBackups.client";
 import { ClustersClient } from "./clusters/Clusters.client";
+import { DatabaseUsersClient } from "./databaseUsers/DatabaseUsers.client";
 import { ProjectsClient } from "./projects/Projects.client";
 export interface AtlasClientOpts {
     privateKey: string;
@@ -17,6 +18,7 @@ export declare class AtlasClient {
     readonly cloudBackupRestoreJobs: CloudBackupRestoreJobsClient;
     readonly cloudBackups: CloudBackupsClient;
     readonly clusters: ClustersClient;
+    readonly databaseUsers: DatabaseUsersClient;
     readonly projects: ProjectsClient;
     constructor({ privateKey, publicKey }: AtlasClientOpts);
 }

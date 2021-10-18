@@ -12,6 +12,8 @@ describe("CloudBackupRestoreJobsClient", function() {
 
   describe("#createDownload()", function() {
     it("should create a cloud backup", async function() {
+      this.timeout(10000);
+
       const projectsResult = await client.projects.list();
       // pick a project that isn't named "production" lol
       const project = projectsResult.results.find(r => r.name.toLowerCase() !== "production");

@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DatabaseUser = void 0;
+const io = require("io-ts");
+const Link_io_1 = require("../util/Link.io");
+const DatabaseUserRole_io_1 = require("./DatabaseUserRole.io");
+const DatabaseUserScope_io_1 = require("./DatabaseUserScope.io");
+exports.DatabaseUser = io.type({
+    awsIAMType: io.union([io.string, io.null, io.undefined]),
+    databaseName: io.union([io.string, io.null, io.undefined]),
+    deleteAfterDate: io.union([io.string, io.null, io.undefined]),
+    groupId: io.string,
+    labels: io.array(io.unknown),
+    ldapAuthType: io.union([io.string, io.null, io.undefined]),
+    links: io.array(Link_io_1.Link),
+    roles: io.array(DatabaseUserRole_io_1.DatabaseUserRole),
+    scopes: io.array(DatabaseUserScope_io_1.DatabaseUserScope),
+    username: io.string,
+    x509Type: io.union([io.string, io.null, io.undefined]),
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGF0YWJhc2VVc2VyLmlvLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2RhdGFiYXNlVXNlcnMvRGF0YWJhc2VVc2VyLmlvLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDRCQUE0QjtBQUU1Qiw2Q0FBdUM7QUFFdkMsK0RBQXlEO0FBQ3pELGlFQUEyRDtBQUU5QyxRQUFBLFlBQVksR0FBRyxFQUFFLENBQUMsSUFBSSxDQUFDO0lBQ2xDLFVBQVUsRUFBRSxFQUFFLENBQUMsS0FBSyxDQUFDLENBQUUsRUFBRSxDQUFDLE1BQU0sRUFBRSxFQUFFLENBQUMsSUFBSSxFQUFFLEVBQUUsQ0FBQyxTQUFTLENBQUUsQ0FBQztJQUMxRCxZQUFZLEVBQUUsRUFBRSxDQUFDLEtBQUssQ0FBQyxDQUFFLEVBQUUsQ0FBQyxNQUFNLEVBQUUsRUFBRSxDQUFDLElBQUksRUFBRSxFQUFFLENBQUMsU0FBUyxDQUFFLENBQUM7SUFDNUQsZUFBZSxFQUFFLEVBQUUsQ0FBQyxLQUFLLENBQUMsQ0FBRSxFQUFFLENBQUMsTUFBTSxFQUFFLEVBQUUsQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDLFNBQVMsQ0FBRSxDQUFDO0lBQy9ELE9BQU8sRUFBRSxFQUFFLENBQUMsTUFBTTtJQUNsQixNQUFNLEVBQUUsRUFBRSxDQUFDLEtBQUssQ0FBQyxFQUFFLENBQUMsT0FBTyxDQUFDO0lBQzVCLFlBQVksRUFBRSxFQUFFLENBQUMsS0FBSyxDQUFDLENBQUUsRUFBRSxDQUFDLE1BQU0sRUFBRSxFQUFFLENBQUMsSUFBSSxFQUFFLEVBQUUsQ0FBQyxTQUFTLENBQUUsQ0FBQztJQUM1RCxLQUFLLEVBQUUsRUFBRSxDQUFDLEtBQUssQ0FBQyxjQUFJLENBQUM7SUFDckIsS0FBSyxFQUFFLEVBQUUsQ0FBQyxLQUFLLENBQUMsc0NBQWdCLENBQUM7SUFDakMsTUFBTSxFQUFFLEVBQUUsQ0FBQyxLQUFLLENBQUMsd0NBQWlCLENBQUM7SUFDbkMsUUFBUSxFQUFFLEVBQUUsQ0FBQyxNQUFNO0lBQ25CLFFBQVEsRUFBRSxFQUFFLENBQUMsS0FBSyxDQUFDLENBQUUsRUFBRSxDQUFDLE1BQU0sRUFBRSxFQUFFLENBQUMsSUFBSSxFQUFFLEVBQUUsQ0FBQyxTQUFTLENBQUUsQ0FBQztDQUN6RCxDQUFDLENBQUMifQ==
