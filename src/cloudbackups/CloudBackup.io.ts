@@ -5,7 +5,7 @@ import { Link } from "../util/Link.io";
 export const CloudBackup = io.type({
   cloudProvider: io.string,
   createdAt: io.string,
-  expiresAt: io.string,
+  expiresAt: io.union([ io.string, io.undefined, io.null ]),
   id: io.string,
   links: io.array(Link),
   mongodVersion: io.string,
